@@ -8,7 +8,9 @@
 	remove_action('wp_head', 'adjacent_posts_rel_link');
 
 	/* 开启菜单功能 - dashboard 可见 */
-	register_nav_menus(array('primary' => '一级导航'));
+	if (function_exists('register_nav_menus')) {
+		register_nav_menus(array('primary' => '一级导航'));
+	}
 
 	/* 浏览次数统计 */
 	/* 加到single.php的主循环中 */
@@ -36,4 +38,21 @@
 		return $count;
 	}
 
+	/* 添加文章缩略图支持 */
+	if (function_exists('add_theme_support')) {
+		add_theme_support('post-thumbnails');
+		//生成默认特色图片,在后台添加时显示(图片上传时生成)
+		set_post_thumbnail_size(150, 150); 
+	}
+	if (function_exists('add_image_size')) {
+		//生成指定类型的特色图片,在页面显示(图片上传时生成)
+		add_image_size('homepage-thumb', 300, 178, true); //hard crop mode
+	}
+
+	/* 截取中文字符串 */
+	function chinese_excerpt ($excerpt) {
+		return mb_substr($excerpt, 0, 200).'...';
+	}
+	//filter hook
+	add_filter('the_excerpt', 'chinese_excerpt');
 ?>
