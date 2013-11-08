@@ -50,9 +50,24 @@
 	}
 
 	/* 截取中文字符串 */
-	function chinese_excerpt ($excerpt) {
-		return mb_substr($excerpt, 0, 200).'...';
+	function chinese_excerpt ($excerpt, $length = 200) {
+		return mb_strlen($excerpt) > 200 ? mb_substr($excerpt, 0, $length).' ...' : $excerpt;
 	}
 	//filter hook
 	add_filter('the_excerpt', 'chinese_excerpt');
+
+	/* 开启边栏 Call on "widgets_init" action */
+	if (function_exists('register_sidebar')) {
+		$args = array(
+			'name' => __('Main Sidebar', 'animabear'),
+			'id' => 'right-sidebar',
+			'description' => '左边栏',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		);
+		register_sidebar($args);
+	}
+
 ?>

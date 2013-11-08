@@ -36,8 +36,13 @@
 			<?php endwhile; ?>
 		<?php else: ?>
 			<!-- 404 页面 -->
+			<div class="post">
+				<h2>404</h2>
+				<h3>木有找到您请求的页面 &gt;_&lt;</h3>
+			</div>
 		<?php endif; ?>
 		</div>
 	</div>
-
+	
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
