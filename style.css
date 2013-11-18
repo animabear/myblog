@@ -1,0 +1,80 @@
+body {
+	background: #f5f5f5;
+	color: #333;
+	font: 14px "微软雅黑",Arial,Helvetica,sans-serif;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff5f3e;
+}
+/* start layout */
+#page {
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+}
+.wrapper {
+	overflow: hidden;
+}
+#primary {
+	float: left;
+	width: 650px;
+}
+#sidebar {
+	float: right;
+	width: 290px;
+	padding-right: 20px;
+}
+
+/* start logo */
+.site-title {
+	font-size: 1.8em;
+}
+.site-title a {
+	font-weight: normal;
+}
+.site-title a:hover {
+	color: #333;
+}
+.site-description {
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+/* start nav */
+.nav-menu {
+	padding: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.nav-menu li {
+	float: left;
+	display: inline;
+}
+.nav-menu li a {
+	font-size: 1.3em;
+}
+
+/* start post */
+.post-header h2 {
+	font-size: 1.3em;
+}
+.post-header h2 a {
+	padding-left: 10px;
+	border-left: 5px solid #ff5f3e;
+}
+.read-more i {
+	font-style: normal;
+	font-size: 12px;
+	padding-left: 2px;
+}
+
+/* start sidebar */
+.widget h3 {
+	padding-left: 10px;
+	border-left: 5px solid #44aa66;
+	font-family: Arial,Helvetica,sans-serif;
+}

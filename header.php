@@ -12,6 +12,9 @@
 </title>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/normalize.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<!--[if lt IE 9]>
+<script src="<?php bloginfo('template_directory'); ?>/js/html5.js"></script>
+<![endif]-->
 
 <?php wp_head(); ?> <!-- 输出插件依赖的头信息 -->
 </head>
@@ -20,7 +23,7 @@
 <div id="page">
 	<header>
 		<hgroup>
-			<h1 class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title"><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo( 'name' ); echo " · "; bloginfo('description'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo('description'); ?></h2>
 		</hgroup>
 		<nav id="site-nav">

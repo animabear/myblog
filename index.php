@@ -29,7 +29,7 @@
 						<div class="post-detail">
 							<?php the_excerpt(); ?>
 						</div>
-						<a class="read-more" href="<?php the_permalink(); ?>">阅读全文</a>
+						<a class="read-more" href="<?php the_permalink(); ?>">阅读全文<i>&gt;&gt;</i></a>
 					</div>
 				</div>
 			</article>
