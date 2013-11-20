@@ -10,6 +10,9 @@ a {
 a:hover {
 	color: #ff5f3e;
 }
+ul {
+	list-style: none;
+}
 /* start layout */
 #page {
 	width: 980px;
@@ -61,10 +64,20 @@ a:hover {
 /* start post */
 .post-header h2 {
 	font-size: 1.3em;
+	border-left: 5px solid #ff5f3e;
 }
 .post-header h2 a {
 	padding-left: 10px;
-	border-left: 5px solid #ff5f3e;
+}
+.post-viewed {
+	float: right;
+	display: inline;
+}
+.post-meta {
+	padding-left: 15px;
+}
+.post-entry {
+	padding: 15px 15px 20px;
 }
 .read-more i {
 	font-style: normal;
@@ -77,4 +90,26 @@ a:hover {
 	padding-left: 10px;
 	border-left: 5px solid #44aa66;
 	font-family: Arial,Helvetica,sans-serif;
+}
+.widget-title {
+	margin-bottom: 10px;
+}
+.widget ul {
+	padding-left: 10px;
+	margin: 0;
+}
+.widget ul li {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* start single */
+body.single .post-header h2{
+	margin-bottom: 0;
+	line-height: 1em;
+}
+body.single .post-meta {
+	padding: 5px 0 0 10px;
+	border-left: 5px solid #ff5f3e;
 }
