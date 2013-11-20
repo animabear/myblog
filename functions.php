@@ -70,4 +70,16 @@
 		register_sidebar($args);
 	}
 
+	//设置标签云参数
+	function set_number_tags($args) {
+		$args = array(
+			'number' => 20,
+			'smallest' => 14,
+			'largest' => 25,
+			'unit' => 'px'
+		);
+		return $args;
+	}
+	add_filter('widget_tag_cloud_args','set_number_tags');
+
 ?>

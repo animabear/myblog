@@ -6,10 +6,10 @@
 			<?php while (have_posts()): the_post(); ?>
 			<article class="post" id="post-<?php the_ID(); ?>">
 				<div class="post-header">
-					<?php if (getPostViews(get_the_ID()) > 0): ?>
-						<div class="post-viewed" title="被围观的次数">
+					<?php if (getPostViews(get_the_ID()) > 0): $count = getPostViews(get_the_ID()); ?>
+						<div class="post-viewed" title="我被围观了<?php echo $count; ?>次">
 							<!-- 输出文章的浏览次数 -->
-							<?php echo getPostViews(get_the_ID()); ?>
+							<?php echo $count; ?>
 						</div>
 					<?php endif; ?>
 					<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>

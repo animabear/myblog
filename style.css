@@ -1,7 +1,12 @@
+html {
+	min-width: 980px;
+	background: 0;
+}
 body {
 	background: #f5f5f5;
 	color: #333;
 	font: 14px "微软雅黑",Arial,Helvetica,sans-serif;
+	border-top: 2px solid #1facab;
 }
 a {
 	color: #333;
@@ -24,7 +29,7 @@ ul {
 }
 #primary {
 	float: left;
-	width: 650px;
+	width: 640px;
 }
 #sidebar {
 	float: right;
@@ -35,6 +40,7 @@ ul {
 /* start logo */
 .site-title {
 	font-size: 1.8em;
+	margin: 0;
 }
 .site-title a {
 	font-weight: normal;
@@ -45,6 +51,7 @@ ul {
 .site-description {
 	font-weight: normal;
 	font-size: 1.1em;
+	margin-top: 0;
 }
 
 /* start nav */
@@ -62,6 +69,9 @@ ul {
 }
 
 /* start post */
+.post-header {
+	margin: 15px 0;
+}
 .post-header h2 {
 	font-size: 1.3em;
 	border-left: 5px solid #ff5f3e;
@@ -72,6 +82,17 @@ ul {
 .post-viewed {
 	float: right;
 	display: inline;
+	width: 30px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 20px 0 0;
+	background-color: #ff5f3e;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
+.post-viewed:hover {
+	cursor: default;
 }
 .post-meta {
 	padding-left: 15px;
@@ -89,25 +110,37 @@ ul {
 .widget h3 {
 	padding-left: 10px;
 	border-left: 5px solid #44aa66;
-	font-family: Arial,Helvetica,sans-serif;
 }
 .widget-title {
 	margin-bottom: 10px;
 }
 .widget ul {
-	padding-left: 10px;
 	margin: 0;
+	padding: 0;
 }
 .widget ul li {
+	padding-left: 15px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-
+.widget ul li a:hover,
+.tagcloud a:hover {
+	color: #44aa66;
+}
+.tagcloud {
+	padding: 0 0 0 15px;
+}
 /* start single */
+body.single .post-header {
+	margin: 0;
+}
 body.single .post-header h2{
 	margin-bottom: 0;
 	line-height: 1em;
+}
+body.single .post-header h2 a:hover {
+	color: #1b1b1b;
 }
 body.single .post-meta {
 	padding: 5px 0 0 10px;
