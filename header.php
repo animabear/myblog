@@ -35,6 +35,7 @@
 				'menu_id' => 'nav-menu'
 			));
 			?>
+			<div id="indicator"></div>
 		</nav>
 	</header>
 	<div id="main" class="wrapper">

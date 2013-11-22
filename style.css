@@ -26,6 +26,7 @@ ul {
 }
 .wrapper {
 	overflow: hidden;
+	margin-top: 40px;
 }
 #primary {
 	float: left;
@@ -38,6 +39,9 @@ ul {
 }
 
 /* start logo */
+#page header {
+	padding: 5px 0 0 15px;
+}
 .site-title {
 	font-size: 1.8em;
 	margin: 0;
@@ -55,6 +59,9 @@ ul {
 }
 
 /* start nav */
+.nav-menu-container {
+	margin-top: 20px;
+}
 .nav-menu {
 	padding: 0;
 	overflow: hidden;
@@ -63,9 +70,22 @@ ul {
 .nav-menu li {
 	float: left;
 	display: inline;
+	width: 100px;
+	text-align: center
 }
 .nav-menu li a {
 	font-size: 1.3em;
+}
+#site-nav {
+	position: relative;
+}
+#indicator {
+	position: absolute;
+	left: 0;
+	width: 100px;
+	height: 4px;
+	background: #ff5f3e;
+	font-size: 0;
 }
 
 /* start post */
@@ -96,14 +116,18 @@ ul {
 }
 .post-meta {
 	padding-left: 15px;
+	margin-top: -10px;
 }
 .post-entry {
-	padding: 15px 15px 20px;
+	padding: 0px 15px 20px;
 }
 .read-more i {
 	font-style: normal;
 	font-size: 12px;
 	padding-left: 2px;
+}
+.post-thumbnail {
+	margin: 10px 0 5px;
 }
 
 /* start sidebar */
@@ -144,5 +168,9 @@ body.single .post-header h2 a:hover {
 }
 body.single .post-meta {
 	padding: 5px 0 0 10px;
+	margin: 0;
 	border-left: 5px solid #ff5f3e;
+}
+body.single .post-entry {
+	padding: 15px 15px 20px;
 }

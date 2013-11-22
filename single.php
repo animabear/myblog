@@ -10,6 +10,7 @@
 				</div>
 				<div class="post-meta">
 					<?php the_category(' | ') ?>
+					&nbsp;
 					<?php the_time('Y.m.d'); ?>
 				</div>
 				<div class="post-entry">
