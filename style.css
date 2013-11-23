@@ -76,6 +76,10 @@ ul {
 .nav-menu li a {
 	font-size: 1.3em;
 }
+.current-menu-item a,
+.current-post-ancestor a {
+	color: #ff5f3e;
+}
 #site-nav {
 	position: relative;
 }
@@ -84,7 +88,7 @@ ul {
 	left: 0;
 	width: 100px;
 	height: 4px;
-	background: #ff5f3e;
+	background: #ff6f3d;
 	font-size: 0;
 }
 
