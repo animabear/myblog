@@ -84,6 +84,7 @@ ul {
 	position: relative;
 }
 #indicator {
+	display: none;
 	position: absolute;
 	left: 0;
 	width: 100px;
@@ -159,6 +160,7 @@ ul {
 .tagcloud {
 	padding: 0 0 0 15px;
 }
+
 /* start single */
 body.single .post-header {
 	margin: 0;
@@ -175,6 +177,13 @@ body.single .post-meta {
 	margin: 0;
 	border-left: 5px solid #ff5f3e;
 }
-body.single .post-entry {
+body.single .post-entry,
+body.page .post-entry {
 	padding: 15px 15px 20px;
+}
+
+/* start page */
+body.page .post-header,
+body.page .post-header h2 {
+	margin-bottom: 0;
 }

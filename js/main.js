@@ -7,7 +7,7 @@ $(function() {
 	} else if ( ($currentMenu = $('.current-post-ancestor', '#nav-menu')) && $currentMenu.length > 0 ) {
 		activeIndex = $currentMenu.index();
 	}
-	$('#indicator').css('left', activeIndex * 100 + 'px');
+	$('#indicator').css('left', activeIndex * 100 + 'px').css('display', 'block');
 
 	//listen mouse action
 	$('#nav-menu li a').on('mouseenter', function(e) {
