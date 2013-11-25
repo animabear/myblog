@@ -11,6 +11,11 @@ body {
 a {
 	color: #333;
 	text-decoration: none;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-ms-transition: color .2s;
+	-o-transition: color .2s;
+	transition: color .2s;
 }
 a:hover {
 	color: #ff5f3e;
@@ -23,6 +28,9 @@ ul {
 	width: 980px;
 	margin: 0 auto;
 	background: #fff;
+	-webkit-box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	-moz-box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }
 .wrapper {
 	overflow: hidden;
@@ -196,4 +204,31 @@ body.page .post-header h2 {
 	padding: 10px 0;
 	border-top: 1px solid #8dd8d4;
 	font-size: 12px;
+}
+
+/* start pagenavi */
+.wp-pagenavi {
+	padding-left: 15px;
+	margin-top: 20px;
+}
+.pages {
+	margin-right: 10px;
+}
+.wp-pagenavi a {
+	padding: 3px 5px;
+	margin: 2px;
+	-webkit-transition: border-top .2s;
+	-moz-transition: border-top .2s;
+	-ms-transition: border-top .2s;
+	-o-transition: border-top .2s;
+	transition: border-top .2s;
+}
+.wp-pagenavi a:hover {
+	border-top: 2px solid #D14836;
+	color: #D14836;
+}
+.wp-pagenavi .current {
+	padding: 3px 5px;
+	margin: 2px;
+	border-top: 2px solid #D14836;
 }

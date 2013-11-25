@@ -35,6 +35,9 @@
 				</div>
 			</article>
 			<?php endwhile; ?>
+
+			<?php if (function_exists('wp_pagenavi')): wp_pagenavi(); endif; ?>
+
 		<?php else: ?>
 			<!-- 404 页面 -->
 			<div class="post">
