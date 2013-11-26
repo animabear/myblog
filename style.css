@@ -232,3 +232,39 @@ body.page .post-header h2 {
 	margin: 2px;
 	border-top: 2px solid #D14836;
 }
+
+/* start goTop */
+*html{
+	background-image:url(about:blank);
+	background-attachment:fixed;
+}
+.go-top {
+	position: fixed;
+	display: none;
+	right: 85px;
+	bottom: 38px;
+	z-index: 9999;
+	_position: absolute;
+	_bottom:auto;
+	_margin-bottom: 38px;
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
+.go-top a {
+	display: block;
+	background-image: url('./images/gotop.png');
+	background-repeat: no-repeat;
+	background-position: center 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	-ms-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+.go-top a:hover {
+	border-radius: 3px;
+	background-color: #999;
+	background-image: url('./images/gotop_hover.png');
+}

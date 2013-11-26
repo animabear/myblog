@@ -6,6 +6,9 @@
 			</div>
 		</div>
 	</footer>
+	<div id="go-top" class="go-top">
+		<a href="#" title="回到顶部"></a>
+	</div>
 </div> <!-- end #page -->
 
 <?php wp_footer(); ?> <!-- 登录后显示管理工具栏 -->

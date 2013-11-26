@@ -21,7 +21,29 @@ $(function() {
 			left: activeIndex * 100 + 'px'
 		}, 200);
 	});
-	/** todo: 优化效率
-	  * 多次操作 动画变得迟钝
-	  */
+
+	//go to top
+	var $goTop = $("#go-top"),
+		dis = 400,				//滑动距离
+		isFadeIn = false;
+
+	$(window).scroll(function() {
+		var top = document.documentElement.scrollTop || document.body.scrollTop;
+		if (top > dis) {
+			if (!isFadeIn) { //未显示
+				isFadeIn = true;
+				$goTop.fadeIn();
+			}
+		} else {
+			if (isFadeIn) { //显示中
+				isFadeIn = false;
+				$goTop.stop().fadeOut();  //stop停止之前的动画
+			}
+		}
+	});
+
+	$goTop.click(function() {
+		$("html, body").animate({scrollTop: 0});
+	});
+
 });
