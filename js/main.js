@@ -12,12 +12,12 @@ $(function() {
 	//listen mouse action
 	$('#nav-menu li a').on('mouseenter', function(e) {
 		var index = $(this).parent().index();
-		$('#indicator').animate({
+		$('#indicator').stop().animate({
 			left: index * 100 + 'px'
 		}, 200);
 	});
 	$('#nav-menu').on('mouseleave', function() {
-		$('#indicator').animate({
+		$('#indicator').stop().animate({
 			left: activeIndex * 100 + 'px'
 		}, 200);
 	});

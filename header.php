@@ -11,7 +11,7 @@
 ?>
 </title>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/normalize.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.min.css" type="text/css" media="screen" />
 <!--[if lt IE 9]>
 <script src="<?php bloginfo('template_directory'); ?>/js/html5.js"></script>
 <![endif]-->

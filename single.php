@@ -10,12 +10,15 @@
 				</div>
 				<div class="post-meta">
 					<?php the_category(' | ') ?>
-					&nbsp;
+					/
 					<?php the_time('Y.m.d'); ?>
 				</div>
 				<div class="post-entry">
 					<!-- 输出文章的图片和缩略内容 -->
 					<?php the_content(); ?>
+				</div>
+				<div class="post-comments">
+					<?php comments_template('', true);?>
 				</div>
 			</article>
 			<?php endwhile; ?>

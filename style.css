@@ -162,6 +162,7 @@ ul {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	line-height: 1.5em;
 }
 .widget ul li a:hover,
 .tagcloud a:hover {
@@ -169,6 +170,41 @@ ul {
 }
 .tagcloud {
 	padding: 0 0 0 15px;
+}
+.tagcloud a {
+	padding: 0 3px;
+	white-space: nowrap;
+	line-height: 1.5em;
+}
+.tagcloud a:nth-child(5n+1) {
+	color: #a32c2b;
+}
+.tagcloud a:nth-child(5n+1):hover {
+	color: #8d2523;
+}
+.tagcloud a:nth-child(5n+2) {
+	color: #b74825;
+}
+.tagcloud a:nth-child(5n+2):hover {
+	color: #a54222;
+}
+.tagcloud a:nth-child(5n+3) {
+	color: #dc7c1b;
+}
+.tagcloud a:nth-child(5n+3):hover {
+	color: #c46f18;
+}
+.tagcloud a:nth-child(5n+4) {
+	color: #de9a2a;
+}
+.tagcloud a:nth-child(5n+4):hover {
+	color: #cc8b27;
+}
+.tagcloud a:nth-child(5n+5) {
+	color: #dbb61a;
+}
+.tagcloud a:nth-child(5n+5):hover {
+	color: #cca817;
 }
 
 /* start single */
@@ -267,4 +303,9 @@ body.page .post-header h2 {
 	border-radius: 3px;
 	background-color: #999;
 	background-image: url('./images/gotop_hover.png');
+}
+
+/* start comments */
+.post-comments {
+	padding: 0 0 0 15px;
 }
