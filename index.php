@@ -41,9 +41,10 @@
 
 		<?php else: ?>
 			<!-- 404 页面 -->
-			<div class="post">
+			<div class="post" id="error-page">
 				<h2>404</h2>
 				<h3>木有找到您请求的页面 &gt;_&lt;</h3>
+				<p>请返回<a href="<?php bloginfo('url'); ?>">首页</a>浏览其他内容~</p>
 			</div>
 		<?php endif; ?>
 		</div>

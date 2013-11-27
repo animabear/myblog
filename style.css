@@ -309,3 +309,20 @@ body.page .post-header h2 {
 .post-comments {
 	padding: 0 0 0 15px;
 }
+
+/* start 404 page */
+#error-page {
+	margin-left: 20px;
+}
+#error-page h2 {
+	color: #D14836;
+	font-size: 24px;
+}
+#error-page p {
+	letter-spacing: 2px;
+}
+#error-page a {
+	font-size: 18px;
+	text-decoration: underline;
+	letter-spacing: 0;
+}
