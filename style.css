@@ -136,6 +136,17 @@ ul {
 .post-entry {
 	padding: 0px 15px 20px;
 }
+.post-entry img {
+	max-width: 640px;
+/*	_width: expression((this.clientWidth >640) ? "640px" : "auto" );*/
+	_width: 640px;
+}
+.post-entry a {
+	color: #ff5f3e;
+}
+.post-entry a:hover {
+	text-decoration: underline;
+}
 .read-more i {
 	font-style: normal;
 	font-size: 12px;
