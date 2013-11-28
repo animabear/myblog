@@ -136,6 +136,9 @@ ul {
 .post-entry {
 	padding: 0px 15px 20px;
 }
+.post-entry p {
+	line-height: 1.8em;
+}
 .post-entry img {
 	max-width: 640px;
 /*	_width: expression((this.clientWidth >640) ? "640px" : "auto" );*/
@@ -173,7 +176,7 @@ ul {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-	line-height: 1.5em;
+	line-height: 1.8em;
 }
 .widget ul li a:hover,
 .tagcloud a:hover {

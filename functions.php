@@ -75,7 +75,7 @@
 		$args = array(
 			'number' => 20,
 			'smallest' => 14,
-			'largest' => 25,
+			'largest' => 18,
 			'unit' => 'px'
 		);
 		return $args;
