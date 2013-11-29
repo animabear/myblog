@@ -23,6 +23,10 @@ a:hover {
 ul {
 	list-style: none;
 }
+::selection {
+	background: #81c7d4;
+	color: #fff;
+}
 /* start layout */
 #page {
 	width: 980px;
@@ -339,4 +343,20 @@ body.page .post-header h2 {
 	font-size: 18px;
 	text-decoration: underline;
 	letter-spacing: 0;
+}
+
+/* start code style */
+.post-entry pre,
+.post-entry code {
+	background-color: #eee;
+}
+.post-entry pre {
+	padding: 15px;
+}
+.post-entry code {
+	padding: 3px;
+}
+.post-entry pre code {
+	padding: 0;
+	display: block;
 }
