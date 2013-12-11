@@ -144,9 +144,9 @@ ul {
 	line-height: 1.8em;
 }
 .post-entry img {
-	max-width: 640px;
+	max-width: 600px;
 /*	_width: expression((this.clientWidth >640) ? "640px" : "auto" );*/
-	_width: 640px;
+	_width: 600px;
 }
 .post-entry a {
 	color: #ff5f3e;
